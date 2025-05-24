@@ -140,17 +140,6 @@ jobs:
           find . -name '*.whl' -exec mv '{}' dist/ \;
           ls -lR dist/
 
-      -   name: Test PyPI Publishing
-          # TODO separate step to test publishing before merging to main
-          # NOTE: PRs from forks fail due to: "missing or insufficient OIDC token permissions,
-          #  the ACTIONS_ID_TOKEN_REQUEST_TOKEN environment variable was unset"
-          # -> test publishing cannot be triggered in PRs?!
-          uses: pypa/gh-action-pypi-publish@release/v1
-          with:
-              password: ${{ secrets.TEST_PYPI_DEPLOYMENT_API_KEY }}
-              repository-url: https://test.pypi.org/legacy/
-              skip-existing: true
-
       - name: Create GitHub Release
         id: create_gh_release
         uses: ncipollo/release-action@v1

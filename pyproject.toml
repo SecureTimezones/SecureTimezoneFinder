@@ -1,13 +1,13 @@
 [tool.poetry]
-name = "timezonefinder"
-version = "6.5.9"
-description = "python package for finding the timezone of any point on earth (coordinates) offline"
-authors = ["jannikmi <github@michelfe.it>"]
+name = "securetimezonefinder"
+version = "1.0.0"
+description = "python package for securely finding the timezone of any point on earth (coordinates) offline"
+authors = ["SecureTimezones"]
 license = "MIT"
 readme = "README.rst"
-repository = "https://github.com/jannikmi/timezonefinder"
-homepage = "https://timezonefinder.michelfe.it/gui"
-documentation = "https://timezonefinder.readthedocs.io/en/latest/"
+repository = "https://github.com/SecureTimezones/SecureTimezoneFinder"
+homepage = "https://github.com/SecureTimezones/SecureTimezoneFinder"
+documentation = "https://github.com/SecureTimezones/SecureTimezoneFinder"
 keywords = ["timezone", "coordinates", "latitude", "longitude", "location", "offline", "polygon"]
 classifiers = [
     "Development Status :: 5 - Production/Stable",
